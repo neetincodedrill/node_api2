@@ -1,0 +1,199 @@
+body{
+    padding : 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header css start here*/
+.container{
+   max-width:85%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.container h1{
+    font-size:50px;
+    color:#191970;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px #191970;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.container .line-text{
+    display:flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+
+.container hr{
+    max-width:50px;
+    margin-left:0
+}
+/* header css end here*/
+
+/* profile image css start here*/
+.profile-image{
+    margin-top: 5px;
+    margin-bottom: 5%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.user-image{
+    margin-left: 30%;
+    position: relative;
+}
+
+.user-image img{
+    height: 100px;
+    width:100px;
+    border-radius: 50px;
+    box-shadow: 3px 6px 8px #b3b1b1;
+}
+
+.file-icon i{
+    position:absolute;
+    left: 24%;
+    top: 25%;
+}
+
+.file-icon i{
+    background-color:#0F52BA; ;
+    padding:11px;
+    border-radius: 20px;
+    color:white
+}
+
+#file{
+    display: none;
+    visibility: none;
+}
+/* profile image css end here*/
+
+/* form css start here*/
+form{
+    max-width:50%;
+    margin-right: auto;
+}
+
+.firstname,.lastname,.email,.password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+ label{
+    font-size:15px;
+    font-family: 'Poppins', sans-serif;
+    color: 	#5f5d5d	;
+    padding-left:5px;
+}
+
+#firstName,#lastName{
+    background-color: #e7ebee;
+    min-height:40px;
+    outline:none;
+    border:none;
+    margin-right:20px;
+    border-radius: 8px;
+    margin-top:5px;
+    padding-left:10px;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#email{
+    background-color:#e7ebee;
+    min-height:40px;
+    min-width:400px;
+    outline:none;
+    border:none;
+    margin-right:20px;
+    border-radius: 8px;
+    margin-top:5px;
+    padding-left:10px;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="password"]{
+    padding:7px 0px;
+    border:none;
+    outline:none;
+    background-color: #e7ebee;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]{
+    outline: none;
+    border: none;
+    background-color:  #e7ebee;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.password-icons{
+    background-color:#e7ebee;
+    min-height:40px;
+    min-width:400px;
+    outline:none;
+    border:none;
+    margin-right:20px;
+    border-radius: 8px;
+    margin-top:5px;
+    padding-left:10px;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center
+}
+
+.password-icons i{
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit{
+    display: none;
+    visibility: none;
+}
+
+.submit-icon{
+    margin-left:10px;
+    cursor: pointer;
+    background-color: #DC143C;
+    max-width: 50px;
+    padding: 25px  0 25px 30px;
+    margin-top:5%;
+    border-radius: 25px;
+    /* box-shadow: 1px 3px 6px  #DC143C; */
+    box-shadow: #DC143C 0px 1px 1px 0px inset, #DC143C 0px 50px 100px -20px,#DC143C 0px 30px 60px -30px;
+}
+
+.submit-icon i{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* form css end here*/
+
+.sign-in{
+    margin-top: 3%;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(124, 119, 119)
+}
+
+.sign-in a{
+    text-decoration: none;
+    margin-left:10px;
+    color: #b1364f
+}

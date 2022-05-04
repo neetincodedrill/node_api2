@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="css/signUp.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Sign Up</h1>              
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <form>
+                    <div class="profile-image">
+                        <div class="user-image" id="user-image">
+                            <img id="image" src= "image.jpg" />
+                        </div>  
+                           <label for="file" class="file-icon">
+                           <i class="fa-solid fa-pencil" for="file"></i>
+                       </label> 
+                        <input type="file" name="file" id="file" onchange="loadFile(event)" required />
+                    </div>
+                        <div class="firstname">
+                            <label>First Name</label>
+                            <input type="text" id="firstName" name="firstName" required autocomplete="off"/>                   
+                        </div>
+                        <div class="lastname">
+                            <label>Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required autocomplete="off"/>
+                        </div>
+                       <div class="email">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="off"/>
+                       </div>
+                       <div class="password">
+                            <label>Password</label>
+                            <div class="password-icons">
+                                <input type="password" id="password" name="password" required autocomplete="off" id="password"/>
+                                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                            </div>
+                       </div>            
+                    <div class="button">
+                        <input id="submit" type="submit" value="Submit">
+                        <div class="submit-icon" for="submit">
+                            <i class="fa-solid fa-arrow-right" ></i>
+                        </div>
+                       
+                    </div>
+                   
+                </form>
+
+                <div class="sign-in">
+                    <p>Already have an account?<a href="signIn.html">Sign In</a></p>
+                </div>
+            </div>
+        </main>
+
+        <script src="js/signUp.js" type="text/javascript" async>     
+        </script>
+        <script src="https://kit.fontawesome.com/657d0752d9.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+    

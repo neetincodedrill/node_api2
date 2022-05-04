@@ -1,0 +1,260 @@
+body{
+    padding : 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{ 
+    max-width:80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-bar{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.top-heading h1{
+    margin-bottom:10px;
+    color:rgb(90, 86, 86)
+}
+
+.top-heading p{
+    color:grey;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.search-bar{
+    background-color: rgb(247, 241, 241);
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    min-width:200px;
+    padding: 12px 25px;
+    color:white;
+    border-radius: 20px;
+}
+
+input[type="text"]{
+    border: none;
+    outline:none;
+    background-color: rgb(247, 241, 241);
+    color:white;
+    font-size:15px
+}
+
+::placeholder {
+    color: rgb(97, 87, 87);
+  }
+
+  hr{
+      max-width: 80%;
+      color:grey;
+      background-color: rgb(225, 216, 216)
+  }
+
+.search-bar i{
+    font-size:18px;
+    color: rgb(121, 109, 109);
+}
+
+.main-section{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.left-content{
+    flex:65%;
+    padding-right:20px
+}
+
+.activity-content{
+    flex:35%;
+    max-width: 90%;
+    
+}
+
+.vl {
+    border-left: 2px solid rgb(225, 216, 216);
+    height:600px;
+    padding: 5px 10px;
+    margin-top:10px
+  }
+
+
+
+.project-heading{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+
+.project-heading a {
+    text-decoration: none;
+    color: #0d89e1;
+    font-weight: bold;
+}
+
+.project-heading a i{
+    margin-left:10px;
+    font-size:14px
+}
+
+.user-info{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-bottom:30px
+}
+
+/* profile image css start here*/
+
+
+.user-image{
+    margin-top:10px;
+    position: relative;
+}
+
+.user-image img{
+    height: 150px;
+    width:150px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 8px #b3b1b1;
+}
+
+.file-icon i{
+    position:absolute;
+    left: 14%;
+    top: 34%;
+}
+
+
+.file-icon i{
+    background-color:#0F52BA; ;
+    padding:11px;
+    border-radius: 20px;
+    color:white
+}
+
+#file{
+    display: none;
+    visibility: none;
+}
+/* profile image css end here*/
+
+.info{
+    margin-left: 20px
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ; 
+    padding: 10px;
+   
+  }
+  .grid-item {
+    padding: 20px;
+    text-align: last baseline;
+    margin-right:30px;
+    min-height:100px;
+    min-width:150px;
+    border-radius: 10px;
+    color:white;
+    border:none;
+    margin-bottom: 30px;
+  }
+
+  .grid-item h4{
+      font-size:35px;
+      margin:10px 0px
+  }
+
+  .grid-item p{
+      font-size:18px
+  }
+
+  .item1{
+    background-color:#0047AB;
+    box-shadow: 0px 3px 10px #0047AB;
+  }
+
+  .item2{
+    background-color:#000080;
+    box-shadow: 0px 3px 10px #000080;
+  }
+
+  .item3{
+   background-color:#0096FF;
+   box-shadow: 0px 3px 10px #0096FF;
+  }
+
+  .item4{
+  background-color:#1F51FF;
+  box-shadow: 0px 3px 10px #1F51FF;
+  }
+
+  .activity{
+      display:flex;
+      flex-direction:row;
+      justify-content:space-between;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .comment-image img{
+    height: 70px;
+    width:70px;
+    border-radius: 35px;
+    box-shadow: 3px 6px 8px #b3b1b1;
+  }
+
+  .comment-image i{
+      font-size:10px;
+      margin-top: 20px;
+  }
+
+  .activity1{
+      display: flex;
+      flex-direction: row;
+      max-width:400px;
+      align-items:center;
+      margin-right: auto;
+      margin-left: 10px;
+  }
+
+  .content{
+      margin-left: 20px;   
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .content h4{
+      margin-bottom: 5px;
+  }
+
+  .content .time{
+      margin-bottom:5px;
+      margin-top:5px;
+      font-size:15px;
+      color: grey;
+  }
+
+  .content .comment{
+      font-size:15px;
+      margin-top:10px
+  }
+
+  .content .comment span{
+      color:#0096FF;
+  }
+
+
+
+  
