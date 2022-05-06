@@ -22,13 +22,14 @@
                 <form>
                     <div class="profile-image">
                         <div class="user-image" id="user-image">
-                            <img id="image" src= "image.jpg" />
+                            <img id="image" src= "images/vimage.jpg" />
                         </div>  
                            <label for="file" class="file-icon">
                            <i class="fa-solid fa-pencil" for="file"></i>
                        </label> 
                         <input type="file" name="file" id="file" onchange="loadFile(event)" required />
                     </div>
+                       <div id="message"></div>
                         <div class="firstname">
                             <label>First Name</label>
                             <input type="text" id="firstName" name="firstName" required autocomplete="off"/>                   
@@ -49,11 +50,7 @@
                             </div>
                        </div>            
                     <div class="button">
-                        <input id="submit" type="submit" value="Submit">
-                        <div class="submit-icon" for="submit">
-                            <i class="fa-solid fa-arrow-right" ></i>
-                        </div>
-                       
+                        <button>Sign Up</button>                  
                     </div>
                    
                 </form>

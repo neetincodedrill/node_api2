@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Sign In</title>
+        <title>Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href="css/dashboard.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +17,15 @@
             <div class="container">
                 <div class="top-bar">
                     <div class="top-heading">
-                        <h1>Welcome Back,<span> Ali !</span></h1>
+                        <h1 id="heading"></h1>
                         <p>Let's do the best today</p>
                     </div>
                     <div class="search-bar">
                         <input type="text" placeholder="Search here.."  />
                         <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="log-out">
+                        <button onclick ="logOut()">Log Out</button>
                     </div>
                 </div>           
             </div>
@@ -31,21 +34,28 @@
         <main>
             <div class="container main-section">
                 <div class="left-content">
+                    
                     <div class="user-info">
                         <div class="profile-image">
                             <div class="user-image" id="user-image">
-                                <img id="image" src= "images/vimage.jpg" />
+                                <img id="image"  />
                             </div>  
                                <label for="file" class="file-icon">
                                <i class="fa-solid fa-pencil" for="file"></i>
                            </label> 
                             <input type="file" name="file" id="file" onchange="loadFile(event)" required />
-                        </div>   
+                        </div>  
+                        
                         <div class="info">
-                            <h4>Olivia Nelson</h4>
-                            <p>olivai@gmail.com</p>
-                        </div>          
+                            <div id="message"></div> 
+                            <h4 id="name"></h4>
+                            <p id="email"></p>
+                        </div> 
+                        <div class="button">
+                            <button class='update' onclick ="updateAccount()">Update</button>
+                        </div>         
                 </div>
+                
                 <div class="project-summary">
                     <div class="project-heading">
                         <h4>Project Summary</h4>

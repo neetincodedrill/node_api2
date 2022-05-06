@@ -255,6 +255,43 @@ input[type="text"]{
       color:#0096FF;
   }
 
+  #message .success{
+    color:#368a3a;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button{
+    margin-left:50px
+}
+
+.update{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:5px
+}
+
+.log-out button{
+    background-color: #D22B2B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:5px
+}
 
 
   
