@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const {emailValidation,passwordValidation } = require("./validation");
-const requireAuth = require('../middleware/authMiddleware')
+const uuid = require('uuid-v4');
 
 //handle errors
 const handleErrors = (err) => {
@@ -31,7 +31,7 @@ var storage = multer.diskStorage({
       cb(null, "../uploads");
     },
     filename: function (req, file, cb) {
-      cb(null, file.originalname);
+      cb(null, uuid() + '-' + file.originalname);
     },
 });
 
@@ -124,9 +124,9 @@ module.exports.login_post = async(req,res) => {
        const { email,password } = req.body;
        //validate the user exits
        const user = await User.findOne({email});
-       if(!user) return res.status(400).json('email is wrong')
+       if(!user) return res.status(400).json('Email does not exits')
        const validPassword = await bcrypt.compare(password,user.password)
-       if(!validPassword) return res.status(400).json('password is wrong')
+       if(!validPassword) return res.status(400).json('Password is wrong')
         //create token
         const token = await jwt.sign(
             {id : user._id},
